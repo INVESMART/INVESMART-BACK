@@ -11,7 +11,7 @@ public class InvesmartWebConfiguration {
         return Collections.unmodifiableMap(new HashMap<String, Object>() {
             {
                 put("server.port", 9080);
-                put("server.servlet.context-path", "/invesmart");
+                put("server.servlet.context-path", "/invesmart-core");
             }
         });
     }
