@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+    <!--<configuration>
+        <custom-converters>
+            <converter type="com.isban.cosmos.business.converters.ClienteDTOAClienteMyaConverter">
+                <class-a>com.isban.commons.dtos.client.ClienteDTO</class-a>
+                <class-b>com.isban.myaws.request.ClienteMya</class-b>
+            </converter>
+            <converter type="com.isban.cosmos.business.converters.ProductoClienteDTOConverter">
+                <class-a>com.isban.iatxclient.model.Producto</class-a>
+                <class-b>com.isban.commons.dtos.product.ProductoClienteDTO</class-b>
+            </converter>
+            <converter type="com.isban.cosmos.business.converters.ClienteDTOConverter">
+                <class-a>com.isban.cosmos.entities.resolution.Persona</class-a>
+                <class-b>com.isban.commons.dtos.client.ClienteDTO</class-b>
+            </converter>
+            <converter type="com.isban.cosmos.business.converters.ConvenioConverter">
+                <class-a>com.isban.commons.dtos.agreements.DetalleConvenioDTO</class-a>
+                <class-b>com.isban.iatxclient.model.CuentaSuscriptor</class-b>
+            </converter>
+            <converter type="com.isban.cosmos.business.converters.MotorDecisionResultDTOConverter">
+                <class-a>com.isban.cosmos.entities.decisionEngine.Paso</class-a>
+                <class-b>com.isban.commons.dtos.decisionEngine.MotorDecisionResultDTO</class-b>
+            </converter>
+            <converter type="com.isban.cosmos.business.converters.EMailConverter">
+                <class-a>com.isban.cosmos.entities.resolution.Persona</class-a>
+                <class-b>com.isban.myaws.sendMail.request.RequestMail</class-b>
+            </converter>
+            <converter type="com.isban.cosmos.business.converters.MovimientoTarjetaCreditoConverter">
+                <class-a>com.isban.cosmos.entities.creditCards.MovimientoTarjeta</class-a>
+                <class-b>com.isban.commons.dtos.creditCard.MovimientoTarjetaCreditoDTO</class-b>
+            </converter>
+        </custom-converters>
+    </configuration>-->
+    <mapping>
+        <class-a>com.invesmart.invesmartModel.model.person.Person</class-a>
+        <class-b>com.invesmart.invesmartCommons.dto.person.PersonDTO</class-b>
+        <field>
+            <a>contacForms</a>
+            <b>contacForms</b>
+            <a-hint>com.invesmart.invesmartModel.model.person.ContacForms</a-hint>
+            <b-hint>com.invesmart.invesmartCommons.dto.person.ContacFormsDTO</b-hint>
+        </field>
+    </mapping>
+    <mapping>
+        <class-a>com.invesmart.invesmartModel.model.person.ContacForms</class-a>
+        <class-b>com.invesmart.invesmartCommons.dto.person.ContacFormsDTO</class-b>
+    </mapping>
+    <!--<mapping>
+        <class-a>com.isban.cosmos.md.response.DecisionResponse</class-a>
+        <class-b>com.isban.commons.dtos.decisionEngine.MotorDecisionDTO</class-b>
+        <field>
+            <a>claimNumber</a>
+            <b>idGestion</b>
+        </field>
+        <field>
+            <a>results</a>
+            <b>results</b>
+            <a-hint>com.isban.cosmos.md.response.ReglaResponse</a-hint>
+            <b-hint>com.isban.commons.dtos.decisionEngine.MotorDecisionResultDTO</b-hint>
+        </field>
+        <field>
+            <a>actions</a>
+            <b>actions</b>
+            <a-hint>com.isban.cosmos.md.action.Accion</a-hint>
+            <b-hint>com.isban.commons.dtos.decisionEngine.AccionDTO</b-hint>
+        </field>
+        <field>
+            <a>response</a>
+            <b>message</b>
+        </field>
+        <field custom-converter="com.isban.cosmos.business.converters.AccionesPorGrupoConverter">
+            <a>actionsByGroup</a>
+            <b>actionsByGroup</b>
+        </field>
+    </mapping>-->
+    <!--<mapping>
+        <class-a>com.isban.cosmos.entities.indicadores.MetricasWorkbook</class-a>
+        <class-b>com.isban.commons.dtos.indicadores.MetricasWorkbookDTO</class-b>
+        <field>
+            <a>metricasGestionesTotales</a>
+            <b>metricasGestionesTotalesDTO</b>
+        </field>
+        <field>
+            <a>metricasGestionesIngresadasList</a>
+            <b>metricaGestionesIngresadasDTOList</b>
+            <a-hint>com.isban.cosmos.entities.indicadores.MetricasGestionesIngresadas</a-hint>
+            <b-hint>com.isban.commons.dtos.indicadores.MetricaGestionesIngresadasDTO</b-hint>
+        </field>
+        <field>
+            <a>metricasGestionesCerradas</a>
+            <b>metricaGestionesCerradasDTOList</b>
+            <a-hint>com.isban.cosmos.entities.indicadores.MetricasGestionesCerradas</a-hint>
+            <b-hint>com.isban.commons.dtos.indicadores.MetricaGestionesCerradasDTO</b-hint>
+        </field>
+    </mapping>-->
+</mappings>

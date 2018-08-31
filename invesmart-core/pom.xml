@@ -66,6 +66,11 @@
             <version>${jUnit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>net.sf.dozer</groupId>
+            <artifactId>dozer</artifactId>
+            <version>${dozer.version}</version>
+        </dependency>
     </dependencies>
 
 

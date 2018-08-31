@@ -1,9 +1,9 @@
-package com.invesmart.invesmartModel.model.person;
+package com.invesmart.invesmartCommons.dto.person;
 
 import java.io.File;
 import java.util.List;
 
-public class Person {
+public class PersonDTO {
 
     private String name;
     private Long id;
@@ -12,16 +12,16 @@ public class Person {
     private String documentId;
     private String nationality;
     private File personPhoto;
-    private List<ContacForms> contacForms;
+    private List<ContacFormsDTO> contacForms;
 
     public static final String DOCUMENT_TYPE_DNI                            = "DNI";
     public static final String DOCUMENT_TYPE_CUIT                           = "CUIT";
     public static final String DOCUMENT_TYPE_CUIL                           = "CUIL";
     public static final String DOCUMENT_TYPE_LIBRETA_CIVICA                 = "LC";
 
-    public ContacForms getEmail(){
-        for(ContacForms contacForms : getContacForms()) {
-            if(ContacForms.TYPE_EMAIL.equals(contacForms.getType())) {
+    public ContacFormsDTO getEmail(){
+        for(ContacFormsDTO contacForms : getContacForms()) {
+            if(ContacFormsDTO.TYPE_EMAIL.equals(contacForms.getType())) {
                 return contacForms;
             }
         }
@@ -68,11 +68,11 @@ public class Person {
         this.nationality = nationality;
     }
 
-    public List<ContacForms> getContacForms() {
+    public List<ContacFormsDTO> getContacForms() {
         return contacForms;
     }
 
-    public void setContacForms(List<ContacForms> contacForms) {
+    public void setContacForms(List<ContacFormsDTO> contacForms) {
         this.contacForms = contacForms;
     }
 
